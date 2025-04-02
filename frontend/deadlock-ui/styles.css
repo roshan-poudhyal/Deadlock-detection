@@ -1,0 +1,50 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#deadlock-status {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#graph-container {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.link {
+  stroke-width: 2px;
+}
+
+.node circle {
+  transition: transform 0.2s ease;
+}
+
+.node:hover circle {
+  transform: scale(1.2);
+}
+
+.link[style*="red"] {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    stroke-width: 3px;
+    filter: drop-shadow(0px 0px 5px red);
+  }
+  to {
+    stroke-width: 4px;
+    filter: drop-shadow(0px 0px 10px red);
+  }
+}
+

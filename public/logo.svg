@@ -1,0 +1,27 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with pulse animation -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#00ff80" stroke-width="2" class="pulse-circle" />
+  
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#00ff80" stroke-width="3" />
+  
+  <!-- Inner circuit pattern -->
+  <path d="M50 10 L50 20 M50 80 L50 90 M10 50 L20 50 M80 50 L90 50" stroke="#00ff80" stroke-width="2" />
+  <path d="M29.3 29.3 L35.7 35.7 M64.3 64.3 L70.7 70.7 M29.3 70.7 L35.7 64.3 M64.3 35.7 L70.7 29.3" stroke="#00ff80" stroke-width="2" />
+  
+  <!-- Central nodes and connections -->
+  <circle cx="50" cy="50" r="15" fill="none" stroke="#00ffff" stroke-width="2" />
+  <circle cx="35" cy="50" r="5" fill="#00ff80" />
+  <circle cx="65" cy="50" r="5" fill="#00ffff" />
+  <circle cx="50" cy="35" r="5" fill="#ff0080" />
+  <circle cx="50" cy="65" r="5" fill="#ffff00" />
+  
+  <!-- Connection lines -->
+  <path d="M35 50 L50 35 L65 50 L50 65 Z" stroke="#00ffff" stroke-width="2" fill="none" />
+  <path d="M35 50 L65 50 M50 35 L50 65" stroke="#ff0080" stroke-width="2" stroke-dasharray="2,2" />
+  
+  <!-- Central lock symbol -->
+  <rect x="45" y="45" width="10" height="10" fill="#00ff80" />
+  <circle cx="50" cy="50" r="2" fill="#000" />
+</svg>
+
